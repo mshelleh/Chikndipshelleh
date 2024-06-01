@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chik'N'Dip</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">Chik'N'Dip<span class="span">.</span></a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="nav-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-btn-group">
+        <button class="search-btn" aria-label="Search" data-search-btn>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+       
+
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-container>
+
+    <div class="search-box">
+      <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..."
+        class="search-input">
+
+      <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+
+    <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Eat Sleep And</p>
+
+            <h2 class="h1 hero-title">CHICKEN SO FRESH, CHICKEN SO GOOD!</h2>
+
+            <p class="hero-text">Find us in Mayfair Mall's Food Court</p>
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROMO
+      -->
+
+      <section class="section section-divider white promo">
+        <div class="container">
+
+          <ul class="promo-list has-scrollbar">
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48"><path fill="#45413c" d="M3.54 44.34a20.46 1.66 0 1 0 40.92 0a20.46 1.66 0 1 0-40.92 0" opacity="0.15"/><path fill="#debb7e" d="M43.35 31.34v5c0 4-8.66 7.19-19.35 7.19S4.65 40.28 4.65 36.31v-5Z"/><path fill="#b89558" d="M4.65 33.55c0 4 8.66 7.19 19.35 7.19s19.35-3.22 19.35-7.19v-2.21H4.65Z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M43.35 31.34v5c0 4-8.66 7.19-19.35 7.19S4.65 40.28 4.65 36.31v-5Z"/><path fill="#bf8256" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M24 38c23.84 0 23.22-7.74 20.46-12.16c-2.77-3.9-9.16-7.22-20.46-7.22S6.31 21.94 3.54 25.81C.78 30.23.16 38 24 38"/><path fill="#6dd627" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M43.35 23.6s3.32 1.1 3.32 4.42s-4.43.55-6.08 1.66s-.42 3.64-2.77 4.42c-3.32 1.11-5-2.09-7.19-1.66C27.87 33 29 35.76 24 35.76s-3.87-2.76-6.63-3.32c-2.17-.44-3.87 2.77-7.19 1.66c-2.35-.78-1.11-3.32-2.77-4.42S1.33 31.34 1.33 28s3.32-4.4 3.32-4.4Z"/><path fill="#ff6242" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M6.86 25.81s-1.84 3.82 2.21 5c3.87 1.11 7.74-2.21 11.06-2.21s6.42 4.89 10.5 3.87c4.43-1.1 2.22-3.31 5-4.42s12.16 2.76 6.63-3.87Z"/><path fill="#ffe500" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M25.11 29.13h-9.4v2.76a2.21 2.21 0 0 0 2.21 2.21H19v2.49a1.94 1.94 0 0 0 3.87 0v-4.15a2.21 2.21 0 0 0 2.22-2.21Z"/><path fill="#f0d5a8" d="M43.35 23c0 4-8.66 7.19-19.35 7.19S4.65 27 4.65 23c0 0 1.11-12.71 19.35-12.71S43.35 23 43.35 23"/><path fill="#debb7e" d="M24 26.36c-9.13 0-16.79-2.35-18.82-5.51A10.37 10.37 0 0 0 4.65 23c0 4 8.66 7.19 19.35 7.19S43.35 27 43.35 23a10.37 10.37 0 0 0-.53-2.19C40.79 24 33.13 26.36 24 26.36"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M43.35 23c0 4-8.66 7.19-19.35 7.19S4.65 27 4.65 23c0 0 1.11-12.71 19.35-12.71S43.35 23 43.35 23"/><path fill="#debb7e" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M12.66 16.18a1.11 1.11 0 0 0-.78 1.36a1.09 1.09 0 0 0 1.35.78L14.3 18a1.1 1.1 0 1 0-.58-2.13Zm6.46 2.99a1.11 1.11 0 1 0 2 .92l.45-1a1.09 1.09 0 0 0-.54-1.46a1.11 1.11 0 0 0-1.47.54Zm16.22-2.99a1.11 1.11 0 0 1 .78 1.36a1.09 1.09 0 0 1-1.35.78L33.7 18a1.1 1.1 0 1 1 .58-2.13Zm-6.46 2.99a1.11 1.11 0 0 1-2 .92l-.45-1a1.09 1.09 0 0 1 .57-1.47a1.11 1.11 0 0 1 1.47.54Z"/></svg>
+                </div>
+
+                <h3 class="h3 card-title">Krispy Sandwich Box</h3>
+
+                <p class="card-text">
+                  Includes 2 crispy or grilled CHIK'N'FINGERS with lettus and CHIK'N'DIP signature sauce.
+                </p>
+
+                <img src="./assets/images/promo-1.png" width="300" height="300" loading="lazy" alt="Maxican Pizza"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48"><g fill="none" stroke="#000" stroke-width="4"><path fill="#2f88ff" stroke-linecap="round" stroke-linejoin="round" d="M15 24H33L31.2 44H16.8L15 24Z"/><rect width="26" height="6" x="11" y="18" rx="3"/><path fill="#2f88ff" d="M24 8C18.4772 8 14 12.4772 14 18H34C34 12.4772 29.5228 8 24 8Z"/><path stroke-linecap="round" d="M28 4L26 8"/></g></svg>
+                </div>
+
+                <h3 class="h3 card-title">Soft Drinks</h3>
+
+                <p class="card-text">
+                  Try our Refreshing Customer-Favorite Mocktail, a delightful blend of flavors that will invigorate your senses.
+                </p>
+
+                <img src="./assets/images/promo-2.png" width="300" height="300" loading="lazy" alt="Soft Drinks"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 14 14"><g fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m.865 10.397l2.6 2.601a1 1 0 0 0 1.415 0l5.294-5.293l-4.016-4.016L.865 8.983a1 1 0 0 0 0 1.414"/><path stroke-linecap="round" stroke-linejoin="round" d="m.6 9.562l5.378 1.409a1 1 0 0 0 1.22-1.221L5.724 4.129"/><path stroke-linecap="round" d="M6.648 4.18c.122-.191.36-.502.547-.651a2.111 2.111 0 0 1 2.97.33c.73.911.583 2.24-.329 2.97l-.297.237"/><path stroke-linejoin="round" d="M6.46 4.003a1.784 1.784 0 0 1 0-2.523a1.79 1.79 0 0 1 2.083-.326l.055-.058a1.782 1.782 0 0 1 2.524 0c.315.316.488.72.518 1.134c.41.032.814.199 1.127.512a1.784 1.784 0 0 1 0 2.523l-.06.058A1.785 1.785 0 0 1 9.86 7.404"/></g></svg>
+                </div>
+
+                <h3 class="h3 card-title">ChikMania Roll</h3>
+
+                <p class="card-text">
+                  Crispy or grilled chik'n'fingers with Mediterranean pickles and garlic sauce wrapped in bread with a side of fries.
+                </p>
+
+                <img src="./assets/images/promo-3.png" width="300" height="300" loading="lazy" alt="French Fry"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 512 512"><path fill="currentColor" d="M0 192c0-35.3 28.7-64 64-64h1.6C73 91.5 105.3 64 144 64c15 0 29 4.1 40.9 11.2C198.2 49.6 225.1 32 256 32s57.8 17.6 71.1 43.2C339 68.1 353 64 368 64c38.7 0 71 27.5 78.4 64h1.6c35.3 0 64 28.7 64 64c0 11.7-3.1 22.6-8.6 32H8.6C3.1 214.6 0 203.7 0 192m0 91.4C0 268.3 12.3 256 27.4 256h457.2c15.1 0 27.4 12.3 27.4 27.4c0 70.5-44.4 130.7-106.7 154.1l-1.8 14.5c-2 16-15.6 28-31.8 28H140.2c-16.1 0-29.8-12-31.8-28l-1.8-14.4C44.4 414.1 0 353.9 0 283.4"/></svg>
+                </div>
+
+                <h3 class="h3 card-title">Cloud Bowl</h3>
+
+                <p class="card-text">
+                  Enjoy our creamy mashed potatoes topped with savory gravy, sweet corn, and two crispy chik'n fingers.
+                </p>
+
+                <img src="./assets/images/promo-4.png" width="300" height="300" loading="lazy" alt="Burger Kingo"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48"><g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="M35.9786 15.4998C35.4536 15.0194 34.8809 14.5921 34.2688 14.2248L32.8034 13.3456C31.4442 12.53 29.9497 11.965 28.3909 11.6774L27.8672 11.5808C25.0469 11.0603 22.3297 10.0961 19.8159 8.7262C19.586 7.71021 18.7942 6.86455 17.7106 6.61834C16.2072 6.27672 14.7114 7.21858 14.3698 8.72205C14.0282 10.2255 14.97 11.7212 16.4735 12.0629C16.5995 12.0915 16.7255 12.1111 16.8507 12.1221C18.5056 13.7407 19.9052 15.6035 21 17.6467"/><path d="M11.3067 25.0192C11.0447 25.3012 8 28.6506 8 32C8 35.5 9.55844 37 11 38C12.4416 39 14.7208 40 16.6104 40C18.5 40 28.5 41 33 40C37.5 39 38 38 40 36C41.0815 34.9185 41.882 33.3983 42.3892 32.2301C42.8802 31.0991 43.2654 29.9245 43.5649 28.7284C43.9246 27.2922 44.2883 25.2299 44 23.5C43.5 20.5 42 18.5 37 16C32.3958 13.6979 28.3532 14.7876 27.7421 14.9745C27.6868 14.9914 27.6352 15.0095 27.5806 15.0287C26.7806 15.3116 20.3163 17.6254 17.5714 19.5C14.7687 21.414 11.6092 24.7019 11.3428 24.981C11.3293 24.9951 11.3201 25.0048 11.3067 25.0192Z"/><path fill="#2f88ff" d="M6.10263 20.0094C5.97741 19.9983 5.85146 19.9787 5.72546 19.9501C4.222 19.6085 3.28014 18.1127 3.62176 16.6093C3.96338 15.1058 5.45912 14.1639 6.96259 14.5055C8.04613 14.7518 8.83798 15.5974 9.0679 16.6134C11.5816 17.9833 14.2989 18.9475 17.1192 19.468L17.6428 19.5646C19.2016 19.8522 20.6961 20.4172 22.0553 21.2328L23.5207 22.112C24.5005 22.6999 25.3793 23.4416 26.1234 24.3087L26.5288 24.7812C27.7526 26.2073 28.3101 28.0877 28.0613 29.9504L28.0331 30.1621C27.8636 31.4312 27.2894 32.6118 26.3957 33.5287L25.9345 34.0018C24.4094 35.5665 22.2148 36.2854 20.0595 35.9261C18.3925 35.6483 16.8493 34.8707 15.6342 33.6962L14.8952 32.9819C14.301 32.4076 13.7859 31.7568 13.3634 31.0466L11.1909 27.3947L10.5574 26.1247C9.42238 23.8489 7.91571 21.7826 6.10263 20.0094Z"/></g></svg>
+                </div>
+
+                <h3 class="h3 card-title">Chicken&Waffles</h3>
+
+                <p class="card-text">
+                  Enjoy our crispy, fresh waffles topped with two deliciously crispy chik'n fingers and sweet syrup.
+                </p>
+
+                <img src="./assets/images/promo-5.png" width="300" height="300" loading="lazy" alt="Chicken Masala"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section section-divider gray about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+            <img src="./assets/images/about-banner.png" width="509" height="459" loading="lazy" alt="Burger with Drinks"
+              class="w-100 about-img">
+          </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">
+              4PC Chik'N'Finger Box Combo is the best 
+              <span class="span">in Town!</span>
+            </h2>
+
+            <p class="section-text">
+              Welcome to Chik'N'Dip, where we bring you the ultimate chicken experience! Our specialty lies in our succulent, crispy chicken, expertly cooked to perfection and paired with an array of mouth-watering dipping sauces. Whether you crave classic flavors or adventurous new tastes, Chik'N'Dip has something to satisfy every palate.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Delicious & Healthy Foods</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Spacific Family And Kids Zone</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Fastest Food Home Delivery</span>
+              </li>
+
+            </ul>
+
+            <button  class="btn btn-hover"> <a href="https://chikndip.square.site/">Order Now</a></button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FOOD MENU
+      -->
+
+      <section class="section food-menu" id="food-menu">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Dishes</p>
+
+          <h2 class="h2 section-title">
+            Our Delicious <span class="span">Foods</span>
+          </h2>
+
+          <ul class="food-menu-list">
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/food-menu-1.png" width="300" height="300" loading="lazy"
+                    alt="Fried Chicken Unlimited" class="w-100">
+
+                  <div class="badge">-15%</div>
+
+				   <button class="btn food-menu-btn"> <a href="https://chikndip.square.site/">Order Now</a></button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Chik'N'</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">4PC Chik'N'Finger Box Combo</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price">$10.49</data>
+
+                  <del class="del" value="12.00">$12.00</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/food-menu-2.png" width="300" height="300" loading="lazy"
+                    alt="Burger King Whopper" class="w-100">
+
+                  <div class="badge">-10%</div>
+
+                  <button class="btn food-menu-btn"> <a href="https://chikndip.square.site/">Order Now</a></button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Chik'N' Bowls</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Mac & Cheese Bowl</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="10.89">$10.89</data>
+
+                  <del class="del">$11.99</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/food-menu-3.png" width="300" height="300" loading="lazy"
+                    alt="White Castle Pizzas" class="w-100">
+
+                  <div class="badge">-25%</div>
+
+                  <button class="btn food-menu-btn"> <a href="https://chikndip.square.site/">Order Now</a></button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Sides</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Mozzarella Sticks</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="7.00">$7.00</data>
+
+                  <del class="del">$8.75</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/food-menu-4.png" width="300" height="300" loading="lazy"
+                    alt="Bell Burrito Supreme" class="w-100">
+
+                  <div class="badge">-20%</div>
+
+                  <button class="btn food-menu-btn"> <a href="https://chikndip.square.site/">Order Now</a></button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Beverages</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Mocktail</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="4.49 ">$4.49</data>
+
+                  <del class="del">$5.60</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/food-menu-5.png" width="300" height="300" loading="lazy"
+                    alt="Kung Pao Chicken BBQ" class="w-100">
+
+                  <div class="badge">-5%</div>
+
+                  <button class="btn food-menu-btn"> <a href="https://chikndip.square.site/">Order Now</a></button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Chik'N'</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Krispy Sandwich Box Combo</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="49.00">$11.89</data>
+
+                  <del class="del">$12.49</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/food-menu-6.png" width="300" height="300" loading="lazy"
+                    alt="Wendy's Chicken" class="w-100">
+
+                  <div class="badge">-15%</div>
+
+                  <button class="btn food-menu-btn"> <a href="https://chikndip.square.site/">Order Now</a></button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Sides</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Fried Oreos</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="8.49">$8.49</data>
+
+                  <del class="del">$9.75</del>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+        </div>
+      </section>
+
+      <!-- 
+        - #DELIVERY
+      -->
+
+      <section class="section section-divider gray delivery">
+        <div class="container">
+
+          <div class="delivery-content">
+
+            <h2 class="h2 section-title">
+              A Moments Of Delivered On <span class="span">Right Time</span> & Place
+            </h2>
+
+            <p class="section-text">
+              At Chik'N'Dip, we understand that your time is valuable, and when hunger strikes, you want your food promptly. That's why we've perfected our delivery service to be as efficient and fast as possible, ensuring you get your favorite chicken dishes hot and fresh, right at your doorstep.
+            </p>
+
+            <button  class="btn btn-hover"> <a href="https://chikndip.square.site/">Order Now</a></button>
+          </div>
+
+          <figure class="delivery-banner">
+            <img src="./assets/images/delivery-banner-bg.png" width="700" height="602" loading="lazy" alt="clouds"
+              class="w-100">
+
+            <img src="./assets/images/delivery-boy.svg" width="1000" height="880" loading="lazy" alt="delivery boy"
+              class="w-100 delivery-img" data-delivery-boy>
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section section-divider white testi">
+        <div class="container">
+
+          <p class="section-subtitle">Testimonials</p>
+
+          <h2 class="h2 section-title">
+            Our Customers <span class="span">Reviews</span>
+          </h2>
+
+          <p class="section-text">
+            Food is any substance consumed to provide nutritional
+            support for an organism.
+          </p>
+
+          <ul class="testi-list has-scrollbar">
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="./assets/images/avatar-1.jpg" width="80" height="80" loading="lazy" alt="Robert William">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Robert William</h3>
+
+                    <p class="testi-title">CEO Kingfisher</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  "I would be lost without restaurant. I would like to personally thank you for your outstanding
+                  product."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="./assets/images/avatar-2.jpg" width="80" height="80" loading="lazy" alt="Thomas Josef">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Thomas Josef</h3>
+
+                    <p class="testi-title">CEO Getforce</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  "I would be lost without restaurant. I would like to personally thank you for your outstanding
+                  product."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="./assets/images/avatar-3.jpg" width="80" height="80" loading="lazy" alt="Charles Richard">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Charles Richard</h3>
+
+                    <p class="testi-title">CEO Angela</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  "I would be lost without restaurant. I would like to personally thank you for your outstanding
+                  product."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top" style="background-image: url('./assets/images/footer-illustration.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="" class="logo">Chik'N'Dip<span class="span">.</span></a>
+
+          <p class="footer-text">
+            At Chik'N'Dip, we are passionate about quality and flavor. Our chicken is always fresh, never frozen, and our sauces are made with the finest ingredients. Whether you're dining in, taking out, or ordering for delivery, we ensure that every bite is a delightful experience.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">+1 (414) 519-5356</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">chikndipusa@gmail.com</p>
+          </li>
+
+          <li>
+            <address class="footer-list-item">2500 N Mayfair Rd #710, Wauwatosa, WI 53226</address>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Opening Hours</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Monday-Saturday: 10:00 AM - 7:30 PM</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Sunday: 11 AM - 5:30 PM</p>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright-text">
+          &copy; 2024 <a href="#" class="copyright-link">Chik'N'Dip</a> All Rights Reserved.
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
